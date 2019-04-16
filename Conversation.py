@@ -5,36 +5,36 @@ import sys
 import time
 
 #The code trying to find out the user's name
-n = input("What's your name?")
-print("Hello " + n)
+name = input("What's your name?")
+print("Hello " + name)
 
 time.sleep(1)
 
 #Asks the user how they feel
-f = (input("How are you feeling? "))
+feeling = (input("How are you feeling? "))
 
 #How the program responds to the user
-if f.lower() == "good":
+if feeling.lower() == "good":
  print("Well that's good!")
  time.sleep(5)
 
 #if the user responds with bad
-if f.lower() == "bad":
- fA = input("What's wrong? ")
- if fA.lower() == "my dog died":
+if feeling.lower() == "bad":
+ feeling_bad = input("What's wrong? ")
+ if feeling_bad.lower() == "my dog died":
    print("John Wick anyone?")
    time.sleep(5)
 
- if fA.lower() == "my parents died":
+ if feeling_bad.lower() == "my parents died":
    print("I feel an origin story coming on")
    time.sleep(5)
 
- if fA.lower() == "I got friendzoned":
+ if feeling_bad.lower() == "I got friendzoned":
    print("You'll get out of it someday")
    time.sleep(5)
 
 #user responds with ok
-if f.lower() == "ok":
+if feeling.lower() == "ok":
   print("Well that's ok")
   time.sleep(5)
 
